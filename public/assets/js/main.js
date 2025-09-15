@@ -270,3 +270,27 @@ document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
     }
   });
 })();
+
+// Swiper with thumbs on project page
+(function(){
+  const hasMain = document.querySelector('.swiper-main');
+  const hasThumbs = document.querySelector('.swiper-thumbs');
+  if(!hasMain) return;
+  let thumbs = null;
+  if (hasThumbs) {
+    thumbs = new Swiper('.swiper-thumbs', {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      watchSlidesProgress: true,
+      freeMode: true,
+    });
+  }
+  new Swiper('.swiper-main', {
+    loop: true,
+    spaceBetween: 8,
+    slidesPerView: 1,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    thumbs: thumbs ? { swiper: thumbs } : undefined
+  });
+})();

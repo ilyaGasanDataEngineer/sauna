@@ -412,3 +412,12 @@ body{padding-top:74px}
   .project-modal__content{grid-template-columns:1fr}
   .project-modal__body{padding:18px}
 }
+
+/* Project page: thumbs gallery */
+.project-gallery .swiper-main .swiper-slide{border-radius:var(--radius); overflow:hidden}
+.project-gallery .swiper-thumbs .swiper-slide{width:120px; height:80px; opacity:.6; cursor:pointer; border-radius:10px; overflow:hidden; border:1px solid #e6d7c7}
+.project-gallery .swiper-thumbs .swiper-slide-thumb-active{opacity:1; border-color:var(--brand)}
+.project-gallery .swiper-thumbs img{width:100%; height:100%; object-fit:cover}
+
+/* Tabs box tweak */
+#projTabsContent{border-color:#e6d7c7}

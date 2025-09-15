@@ -48,11 +48,11 @@ $projects = array_slice($all, $offset, $per);
                  data-text="<?= htmlspecialchars($descLong) ?>"
                  data-img="<?= htmlspecialchars($img) ?>"
                  data-link="/projects/<?= htmlspecialchars($slug) ?>">
-              <div class="proj-media">
+              <a class="proj-media" href="/projects/<?= htmlspecialchars($slug) ?>" data-stop="1">
                 <img src="<?= htmlspecialchars($img) ?>" alt="<?= htmlspecialchars($title) ?>" loading="lazy">
-              </div>
+              </a>
               <div class="proj-body">
-                <div class="proj-title"><?= htmlspecialchars($title) ?></div>
+                <a class="proj-title d-inline-block" href="/projects/<?= htmlspecialchars($slug) ?>" data-stop="1"><?= htmlspecialchars($title) ?></a>
                 <?php if($sub): ?><div class="proj-sub text-muted"><?= htmlspecialchars($sub) ?></div><?php endif; ?>
                 <div class="proj-specs">
                   <?php if($area): ?><span>🏷️ <?= htmlspecialchars($area) ?></span><?php endif; ?>
