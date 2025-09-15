@@ -1,4 +1,4 @@
-<?php if (!isset($pageTitle)) $pageTitle = 'Сайт'; if (!isset($pageDesc)) $pageDesc = ''; ?>
+<?php if (!isset($pageTitle)) $pageTitle = 'Сайт'; if (!isset($pageDesc)) $pageDesc = ''; $active = $active ?? ''; $site = $site ?? json_decode(file_get_contents(__DIR__.'/../data/site.json'), true); ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -15,21 +15,20 @@
 </head>
 <body>
 <header class="site-header">
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top choco-nav" role="navigation" aria-label="Главная навигация">
     <div class="container">
-      <a class="navbar-brand fw-800" href="/"><?= htmlspecialchars($site['company']) ?></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <a class="navbar-brand fw-800 hover-pop" href="/"><?= htmlspecialchars($site['company']) ?></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Переключить меню">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/#about">О нас</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#catalog">Проекты</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#process">Этапы</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#contacts">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link <?= $active==='projects'?'active':'' ?> hover-underline" href="/projects">Проекты</a></li>
+          <li class="nav-item"><a class="nav-link <?= $active==='about'?'active':'' ?> hover-underline" href="/about">О нас</a></li>
+          <li class="nav-item"><a class="nav-link <?= $active==='process'?'active':'' ?> hover-underline" href="/process">Этапы</a></li>
+          <li class="nav-item"><a class="nav-link <?= $active==='contacts'?'active':'' ?> hover-underline" href="/contacts">Контакты</a></li>
         </ul>
-        <a class="btn btn-primary ms-lg-3" href="tel:<?= htmlspecialchars($site['contacts']['phone_raw']) ?>">Позвонить</a>
+        <a class="btn btn-primary ms-lg-3 hover-elevate" href="tel:<?= htmlspecialchars($site['contacts']['phone_raw']) ?>">Позвонить</a>
       </div>
     </div>
   </nav>

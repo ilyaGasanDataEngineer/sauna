@@ -69,7 +69,7 @@ include __DIR__.'/partials/header.php';
         <h2 class="h1 m-0">Каталог проектов</h2>
         <small class="text-muted"><?= count($projects) ?> проектов</small>
       </div>
-      <div class="row g-4">
+      <div class="row g-4 equalize">
         <?php foreach ($projects as $p): include __DIR__.'/templates/project-card.php'; endforeach; ?>
       </div>
     </div>

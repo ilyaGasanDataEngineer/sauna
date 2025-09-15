@@ -1,5 +1,17 @@
 RewriteEngine On
 RewriteBase /
+
+# Страницы верхнего уровня
+RewriteRule ^about/?$ about.php [L,QSA]
+RewriteRule ^projects/?$ projects.php [L,QSA]
+RewriteRule ^process/?$ process.php [L,QSA]
+RewriteRule ^contacts/?$ contacts.php [L,QSA]
+RewriteRule ^privacy/?$ privacy.php [L,QSA]
+
+# Проекты по slug
 RewriteRule ^projects/([a-z0-9\-]+)/?$ project.php?slug=$1 [L,QSA]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+
+# Отдаём статические файлы как есть
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]

@@ -3,33 +3,122 @@
     "slug": "classic-1",
     "title": "Classic 1",
     "subtitle": "Классическая баня для семьи",
-    "specs": {
-      "area_m2": 24,
-      "size": "4×6 м",
-      "material": "Профилированный брус 140×190",
-      "foundation": "Свайно-винтовой",
-      "roof": "Металлочерепица"
-    },
+    "specs": { "area_m2": 24, "size": "4×6 м", "material": "Профилированный брус 140×190", "foundation": "Свайно-винтовой", "roof": "Металлочерепица" },
     "price": { "value": 1230000, "note": "Цена ориентировочная, уточняйте у менеджера" },
     "gallery": [
       "https://images.unsplash.com/photo-1505692069463-eb1f9b4c8a2e?w=1600&q=80&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&q=80&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616595077779-9b606e59f8de?w=1600&q=80&auto=format&fit=crop"
     ],
     "plans": [
-      "https://images.unsplash.com/photo-1527430253228-e93688616381?w=1400&q=80&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1527430253228-e93688616381?w=1400&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1400&q=80&auto=format&fit=crop"
     ],
     "equipment": {
       "base": ["Сборка на участке","Утепление стен"],
       "options": ["Терраса","Печь повышенной мощности"]
     },
     "description": [
-      "Уютная баня с продуманной планировкой для 2–4 человек.",
-      "Доступны опции террасы и усиленной печи."
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Mauris dignissim, lectus ac fermentum viverra, sem arcu facilisis ante, sed mattis nibh elit non augue.",
+      "Suspendisse semper sapien sit amet nisi facilisis, a vehicula erat fringilla."
     ],
-    "related": ["classic-1"],
-    "seo": {
-      "description": "Классическая баня 4×6 м из профилированного бруса.",
-      "og_image": "https://images.unsplash.com/photo-1505692069463-eb1f9b4c8a2e?w=1600&q=80&auto=format&fit=crop"
-    }
+    "related": ["classic-2","family-1"],
+    "seo": { "description": "Классическая баня 4×6 м из профилированного бруса.", "og_image": "https://images.unsplash.com/photo-1505692069463-eb1f9b4c8a2e?w=1600&q=80&auto=format&fit=crop" }
+  },
+  {
+    "slug": "classic-2",
+    "title": "Classic 2",
+    "subtitle": "Компактная баня с террасой",
+    "specs": { "area_m2": 20, "size": "4×5 м", "material": "Профилированный брус 140×190", "foundation": "Ленточный", "roof": "Металлочерепица" },
+    "price": { "value": 1100000, "note": "Индивидуальная комплектация по запросу" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1600585154154-1e87b1c743b7?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0d?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": ["https://images.unsplash.com/photo-1556909114-3f2816f9b3c5?w=1400&q=80&auto=format&fit=crop"],
+    "equipment": { "base": ["Сборка на участке","Теплый контур"], "options": ["Терраса","Тёплый пол"] },
+    "description": [
+      "Integer finibus libero vitae tristique rhoncus.",
+      "Aliquam erat volutpat. Sed sagittis, risus a vestibulum vehicula, lorem elit posuere lacus, id convallis arcu dui vitae dolor."
+    ],
+    "related": ["classic-1","modern-1"],
+    "seo": { "description": "Компактная баня с террасой, оптимальный бюджет.", "og_image": "https://images.unsplash.com/photo-1600585154154-1e87b1c743b7?w=1600&q=80&auto=format&fit=crop" }
+  },
+  {
+    "slug": "modern-1",
+    "title": "Modern 1",
+    "subtitle": "Современный минимализм",
+    "specs": { "area_m2": 28, "size": "5×6 м", "material": "Каркас", "foundation": "Свайно-винтовой", "roof": "Плоская кровля" },
+    "price": { "value": 1490000, "note": "Стоимость ориентировочная" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1616596872800-6ee4f8335a68?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1618220179428-22790b461013?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": ["https://images.unsplash.com/photo-1523419380523-8c5ae80d40f2?w=1400&q=80&auto=format&fit=crop"],
+    "equipment": { "base": ["Сборка на участке","Утепление стен"], "options": ["Панорамные окна","Тёплый пол"] },
+    "description": [
+      "Cras pretium, augue quis luctus dignissim, nisi dolor porta orci, nec posuere lorem lacus non magna.",
+      "Proin tempus, velit in tempus pulvinar, nulla nulla vehicula arcu, a viverra arcu justo a arcu."
+    ],
+    "related": ["eco-1","premium-1"],
+    "seo": { "description": "Современная каркасная баня в минималистичном стиле.", "og_image": "https://images.unsplash.com/photo-1616596872800-6ee4f8335a68?w=1600&q=80&auto=format&fit=crop" }
+  },
+  {
+    "slug": "eco-1",
+    "title": "Eco 1",
+    "subtitle": "Экологичные материалы",
+    "specs": { "area_m2": 22, "size": "4×5,5 м", "material": "Клеёный брус", "foundation": "Ленточный", "roof": "Мягкая кровля" },
+    "price": { "value": 1370000, "note": "Состав комплектации обсуждается" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1622015663319-1f77ec90d3e8?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519710884001-2f43ce221f59?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": ["https://images.unsplash.com/photo-1523419409543-6570d3d2d6e8?w=1400&q=80&auto=format&fit=crop"],
+    "equipment": { "base": ["Сборка на участке","Паробарьер"], "options": ["Терраса","Доп. утепление"] },
+    "description": [
+      "Etiam ac vestibulum leo. Maecenas euismod, felis vel finibus porta, urna velit dignissim dolor, sit amet pulvinar neque justo id risus.",
+      "Curabitur sit amet feugiat lectus. Donec bibendum imperdiet risus."
+    ],
+    "related": ["modern-1","family-1"],
+    "seo": { "description": "Экологичная баня из клеёного бруса.", "og_image": "https://images.unsplash.com/photo-1622015663319-1f77ec90d3e8?w=1600&q=80&auto=format&fit=crop" }
+  },
+  {
+    "slug": "premium-1",
+    "title": "Premium 1",
+    "subtitle": "Премиальная отделка и панорама",
+    "specs": { "area_m2": 32, "size": "5×6,5 м", "material": "Клеёный брус", "foundation": "Ростверк", "roof": "Металлочерепица" },
+    "price": { "value": 1960000, "note": "Премиальная линия отделки" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": ["https://images.unsplash.com/photo-1527430253228-e93688616381?w=1400&q=80&auto=format&fit=crop"],
+    "equipment": { "base": ["Сборка на участке","Тёплый контур"], "options": ["Панорамные окна","Тёплый пол","Терраса"] },
+    "description": [
+      "Nam eu lectus nec risus sagittis vehicula. Integer id enim erat.",
+      "Donec faucibus, tortor in tincidunt aliquet, nibh purus cursus nibh, nec porttitor arcu nisl nec dolor."
+    ],
+    "related": ["modern-1","classic-2"],
+    "seo": { "description": "Премиальная баня с панорамными окнами.", "og_image": "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1600&q=80&auto=format&fit=crop" }
+  },
+  {
+    "slug": "family-1",
+    "title": "Family 1",
+    "subtitle": "Семейная баня с просторной парной",
+    "specs": { "area_m2": 26, "size": "4,5×6 м", "material": "Профилированный брус", "foundation": "Свайно-винтовой", "roof": "Мягкая кровля" },
+    "price": { "value": 1420000, "note": "Семейная комплектация" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1599422314077-f4dfdaa4cd29?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1624901517435-74bc1dc2c527?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": ["https://images.unsplash.com/photo-1556909114-3f2816f9b3c5?w=1400&q=80&auto=format&fit=crop"],
+    "equipment": { "base": ["Сборка на участке","Утепление стен"], "options": ["Терраса","Комната отдыха"] },
+    "description": [
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc quis venenatis ante.",
+      "Sed congue, mi a feugiat rutrum, lectus lorem feugiat nibh, vitae malesuada nisi nisl ac felis."
+    ],
+    "related": ["classic-1","eco-1"],
+    "seo": { "description": "Семейная баня с просторной парной.", "og_image": "https://images.unsplash.com/photo-1599422314077-f4dfdaa4cd29?w=1600&q=80&auto=format&fit=crop" }
   }
 ]
