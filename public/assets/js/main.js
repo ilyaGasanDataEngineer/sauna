@@ -294,3 +294,23 @@ document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
     thumbs: thumbs ? { swiper: thumbs } : undefined
   });
 })();
+
+// === Image reliability: proxy & fallback ===
+(function(){
+  const PLACEHOLDER = '/assets/img/placeholder.svg';
+  // 3.1 Проксируем все внешние <img src="http...">
+  document.querySelectorAll('img').forEach(img => {
+    const s = img.getAttribute('src') || '';
+    if (/^https?:\/\//i.test(s)) {
+      img.setAttribute('data-orig', s);
+      img.src = '/img.php?src=' + encodeURIComponent(s);
+    }
+    img.onerror = () => { img.onerror = null; img.src = PLACEHOLDER; };
+  });
+  // 3.2 И для ссылок в лайтбоксе
+  document.querySelectorAll('a.glightbox[href^="http"]').forEach(a => {
+    const s = a.getAttribute('href');
+    a.setAttribute('data-orig', s);
+    a.setAttribute('href', '/img.php?src=' + encodeURIComponent(s));
+  });
+})();
