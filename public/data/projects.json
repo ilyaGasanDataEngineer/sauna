@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "classic-1",
+    "title": "Classic 1",
+    "subtitle": "Классическая баня для семьи",
+    "specs": {
+      "area_m2": 24,
+      "size": "4×6 м",
+      "material": "Профилированный брус 140×190",
+      "foundation": "Свайно-винтовой",
+      "roof": "Металлочерепица"
+    },
+    "price": { "value": 1230000, "note": "Цена ориентировочная, уточняйте у менеджера" },
+    "gallery": [
+      "https://images.unsplash.com/photo-1505692069463-eb1f9b4c8a2e?w=1600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&q=80&auto=format&fit=crop"
+    ],
+    "plans": [
+      "https://images.unsplash.com/photo-1527430253228-e93688616381?w=1400&q=80&auto=format&fit=crop"
+    ],
+    "equipment": {
+      "base": ["Сборка на участке","Утепление стен"],
+      "options": ["Терраса","Печь повышенной мощности"]
+    },
+    "description": [
+      "Уютная баня с продуманной планировкой для 2–4 человек.",
+      "Доступны опции террасы и усиленной печи."
+    ],
+    "related": ["classic-1"],
+    "seo": {
+      "description": "Классическая баня 4×6 м из профилированного бруса.",
+      "og_image": "https://images.unsplash.com/photo-1505692069463-eb1f9b4c8a2e?w=1600&q=80&auto=format&fit=crop"
+    }
+  }
+]
